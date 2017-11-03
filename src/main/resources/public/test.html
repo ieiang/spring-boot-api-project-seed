@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+
+<body>
+    <h1>welcome to yunfu store!</h1>
+    <p><a href="javascript:void(0);" onclick="serach_all_mc_user()">serach all mc_user</a></p>
+
+</body>
+
+<script type="text/javascript" src="comm.js"></script>
+
+<script>
+
+
+  /*
+    Serach all mc_user;
+   */
+  function serach_all_mc_user(){
+    //get a xmlhttp;
+    var xmlhttp = get_xmlhttp();
+    //create a ajax request;
+    xmlhttp.open(
+        "GET",
+        "mc/user",
+        true
+    );
+    //send request;
+    xmlhttp.send();
+    //TODO
+
+    var json = xmlhttp_response(xmlhttp);
+    alert(json);
+  }
+</script>
+</html>

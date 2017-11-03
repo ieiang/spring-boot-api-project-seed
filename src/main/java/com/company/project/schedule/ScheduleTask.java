@@ -1,4 +1,4 @@
-package com.company.project.task;
+package com.company.project.schedule;
 
 import com.company.project.model.Stock;
 import com.company.project.service.StockService;
